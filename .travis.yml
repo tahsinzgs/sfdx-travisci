@@ -2,7 +2,7 @@ sudo: true
 env:
 - URL=https://developer.salesforce.com/media/salesforce-cli/sfdx-v5.6.22-f9533ba-linux-amd64.tar.xz
 before_install:
-- openssl aes-256-cbc -K $encrypted_22aa81a680df_key -iv $encrypted_22aa81a680df_iv
+#- openssl aes-256-cbc -K $encrypted_22aa81a680df_key -iv $encrypted_22aa81a680df_iv
   -in assets/server.key.enc -out assets/server.key -d
 - wget -qO- $URL | tar xJf -
 - ./heroku/install
